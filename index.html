@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Waste in Bangalore</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <!-- Chart.js for data visualization -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="hero">
+        <nav class="navbar">
+            <div class="logo">E-Waste Bangalore</div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#data">Data</a></li>
+                <li><a href="#impact">Impact</a></li>
+                <li><a href="#solutions">Solutions</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+        <div class="hero-content">
+            <h1>E-Waste in Bangalore</h1>
+            <p>Understanding the challenges and solutions for electronic waste management in India's tech hub</p>
+            <a href="#learn-more" class="btn primary-btn">Learn More</a>
+            <p1>Prepared by:</p1><br>
+            Jadav Adarsh(B025)<br>
+            vinit soni(B90)<br>
+            Chosaliya Dhruv(B14)<br>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>About E-Waste Crisis</h2>
+                <div class="underline"></div>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Electronic waste or e-waste is one of the fastest-growing waste streams in Bangalore and across India. As the IT capital of India, Bangalore generates significant amounts of discarded electronics, creating environmental and health challenges.</p>
+                    <p>This site aims to raise awareness about the e-waste problem in Bangalore, provide data insights, and offer solutions for better management practices.</p>
+                    <div class="about-facts">
+                        <div class="fact">
+                            <i class="fas fa-microchip"></i>
+                            <p>Bangalore generates over 20,000 tons of e-waste annually</p>
+                        </div>
+                        <div class="fact">
+                            <i class="fas fa-exclamation-triangle"></i>
+                            <p>Only 5% is properly recycled through formal channels</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image-gallery">
+                    <div class="main-image">
+                        <img src="electronic.png" alt="Earth surrounded by electronic waste showing global impact" class="img-responsive">
+                    </div>
+              <!--     <div class="sub-images">
+                        <img src="images/ewaste-components.jpg" alt="Electronic components and circuit boards" class="img-responsive">
+                        <img src="images/ewaste-sorting.jpg" alt="Workers sorting electronic waste" class="img-responsive">
+                    </div>-->
+                </div>
+            </div>
+            <div class="about-additional">
+                <p class="about-message">E-waste is not just a local problem but a global environmental crisis that requires urgent action and collaboration.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Data Section -->
+    <section id="data" class="section bg-light">
+        <div class="container">
+            <div class="section-header">
+                <h2>E-Waste Data</h2>
+                <div class="underline"></div>
+            </div>
+            
+            <!-- Top Cities Chart -->
+            <div class="chart-container">
+                <h3>Top 3 E-Waste Generating Cities in India</h3>
+                <div class="chart-wrapper">
+                    <canvas id="citiesChart"></canvas>
+                </div>
+            </div>
+            
+            <!-- E-Waste Categories -->
+            <div class="categories">
+                <h3>Categories of E-Waste</h3>
+                <div class="category-grid">
+                    <div class="category-card">
+                        <div class="category-icon">
+                            <i class="fas fa-tv"></i>
+                        </div>
+                        <h4>Large Equipment</h4>
+                        <p>Washing machines, refrigerators, air conditioners</p>
+                    </div>
+                    <div class="category-card">
+                        <div class="category-icon">
+                            <i class="fas fa-laptop"></i>
+                        </div>
+                        <h4>IT & Telecom</h4>
+                        <p>Computers, smartphones, tablets, servers</p>
+                    </div>
+                    <div class="category-card">
+                        <div class="category-icon">
+                            <i class="fas fa-microchip"></i>
+                        </div>
+                        <h4>Small Equipment</h4>
+                        <p>Vacuum cleaners, microwaves, toasters</p>
+                    </div>
+                    <div class="category-card">
+                        <div class="category-icon">
+                            <i class="fas fa-headphones"></i>
+                        </div>
+                        <h4>Consumer Electronics</h4>
+                        <p>Headphones, speakers, cameras</p>
+                    </div>
+                    <div class="category-card">
+                        <div class="category-icon">
+                            <i class="fas fa-lightbulb"></i>
+                        </div>
+                        <h4>Lighting Equipment</h4>
+                        <p>Fluorescent lamps, LED lights, bulbs</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Key Issues Section -->
+    <section id="issues" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Key Issues</h2>
+                <div class="underline"></div>
+            </div>
+            <div class="issues-container">
+                <div class="issue-card">
+                    <div class="issue-icon">
+                        <i class="fas fa-skull-crossbones"></i>
+                    </div>
+                    <div class="issue-content">
+                        <h3>Harmful Chemicals</h3>
+                        <ul>
+                            <li>Lead and mercury causing neurological damage</li>
+                            <li>Cadmium affecting kidney function</li>
+                            <li>Brominated flame retardants disrupting hormone systems</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="issue-card">
+                    <div class="issue-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <div class="issue-content">
+                        <h3>Waste Statistics</h3>
+                        <ul>
+                            <li>Bangalore generates over 20,000 tons of e-waste annually</li>
+                            <li>Only 5% is properly recycled through formal channels</li>
+                            <li>Informal sector handles 95% without proper safety measures</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="issue-card">
+                    <div class="issue-icon">
+                        <i class="fas fa-exclamation-triangle"></i>
+                    </div>
+                    <div class="issue-content">
+                        <h3>Management Problems</h3>
+                        <ul>
+                            <li>Lack of infrastructure for proper collection</li>
+                            <li>Limited awareness among citizens</li>
+                            <li>Insufficient policy enforcement</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Impact Section -->
+    <section id="impact" class="section bg-accent">
+        <div class="container">
+            <div class="section-header light">
+                <h2>Impact of E-Waste Management</h2>
+                <div class="underline light"></div>
+            </div>
+            <div class="impact-content">
+                <div class="impact-image">
+                    <img src="recycle1.png" alt="E-waste recycling process" class="img-responsive">
+                </div>
+                <div class="impact-text">
+                    <h3>Why Proper Management Matters</h3>
+                    <p>Proper e-waste management is crucial for environmental protection, resource conservation, and public health. By implementing effective strategies, we can:</p>
+                    <ul class="impact-list">
+                        <li><span class="icon"><i class="fas fa-leaf"></i></span> Reduce environmental pollution</li>
+                        <li><span class="icon"><i class="fas fa-hand-holding-heart"></i></span> Protect worker health and safety</li>
+                        <li><span class="icon"><i class="fas fa-recycle"></i></span> Recover valuable materials</li>
+                        <li><span class="icon"><i class="fas fa-industry"></i></span> Create sustainable job opportunities</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Impact Statistics -->
+            <div class="statistics">
+                <h3>E-Waste Management Progress</h3>
+                <div class="stats-container">
+                    <div class="stat-item">
+                        <div class="chart-wrapper donut">
+                            <canvas id="recyclingChart"></canvas>
+                        </div>
+                        <h4>Recycling Rate</h4>
+                    </div>
+                    <div class="stat-item">
+                        <div class="chart-wrapper donut">
+                            <canvas id="awarenessChart"></canvas>
+                        </div>
+                        <h4>Public Awareness</h4>
+                    </div>
+                    <div class="stat-item">
+                        <div class="chart-wrapper donut">
+                            <canvas id="regulationChart"></canvas>
+                        </div>
+                        <h4>Regulatory Compliance</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Solutions Section -->
+    <section id="solutions" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Solutions</h2>
+                <div class="underline"></div>
+            </div>
+            
+            <div class="tabs">
+                <div class="tab-header">
+                    <div class="tab-btn active" data-tab="recycling">Recycling Methods</div>
+                    <div class="tab-btn" data-tab="disposal">Safe Disposal</div>
+                    <div class="tab-btn" data-tab="awareness">Awareness Programs</div>
+                </div>
+                
+                <div class="tab-content">
+                    <div class="tab-pane active" id="recycling">
+                        <div class="solution-card">
+                            <div class="solution-icon">
+                                <i class="fas fa-recycle"></i>
+                            </div>
+                            <div class="solution-info">
+                                <h3>Modern Recycling Techniques</h3>
+                                <p>Advanced technologies for e-waste recycling include:</p>
+                                <ul>
+                                    <li>Mechanical processing and separation</li>
+                                    <li>Pyrometallurgical recovery of metals</li>
+                                    <li>Hydrometallurgical techniques for precious metals</li>
+                                    <li>Biometallurgical approaches using microorganisms</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="tab-pane" id="disposal">
+                        <div class="solution-card">
+                            <div class="solution-icon">
+                                <i class="fas fa-trash-alt"></i>
+                            </div>
+                            <div class="solution-info">
+                                <h3>Safe Disposal Practices</h3>
+                                <p>Recommended practices for safe e-waste disposal:</p>
+                                <ul>
+                                    <li>Drop-off at authorized collection centers</li>
+                                    <li>Retailer take-back programs</li>
+                                    <li>Manufacturer buy-back schemes</li>
+                                    <li>Secure data wiping before disposal</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="tab-pane" id="awareness">
+                        <div class="solution-card">
+                            <div class="solution-icon">
+                                <i class="fas fa-bullhorn"></i>
+                            </div>
+                            <div class="solution-info">
+                                <h3>Awareness Initiatives</h3>
+                                <p>Programs to increase public awareness include:</p>
+                                <ul>
+                                    <li>Educational campaigns in schools and colleges</li>
+                                    <li>Corporate responsibility programs</li>
+                                    <li>Community workshops and events</li>
+                                    <li>Social media campaigns and online resources</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Join the Movement for Responsible E-Waste Management</h2>
+                <p>Learn how you can contribute to solving Bangalore's e-waste challenge</p>
+                <a href="#contact" class="btn primary-btn">Get Involved</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section bg-light">
+        <div class="container">
+            <div class="section-header">
+                <h2>Contact Us</h2>
+                <div class="underline"></div>
+            </div>
+            <div class="contact-container">
+                <div class="contact-form">
+                    <form>
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn primary-btn">Send Message</button>
+                    </form>
+                </div>
+                <div class="contact-info">
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="info-text">
+                            <h4>Address</h4>
+                            <p>Navrangpura cg road Ahemdabad, Gujrat, India</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="info-text">
+                            <h4>Email</h4>
+                            <p>Adarshj404@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="info-text">
+                            <h4>Phone</h4>
+                            <p>+919033867899</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h3>E-Waste Bangalore</h3>
+                    <p>Working towards a sustainable future</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#data">Data</a></li>
+                        <li><a href="#impact">Impact</a></li>
+                        <li><a href="#solutions">Solutions</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h4>Connect With Us</h4>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 E-Waste Bangalore. All rights reserved.</p>
+                <p>Data sources: Central Pollution Control Board, Karnataka State Pollution Control Board</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html> 
